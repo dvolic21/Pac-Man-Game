@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <ImageView id="settings" fitHeight="59.0" fitWidth="50.0" layoutX="926.0" layoutY="676.0" onMouseClicked="#switchScenes" onMouseEntered="#imageViewHover" onMouseExited="#imageViewUnHover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/navigation/settings.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="382.0" layoutY="278.0" text="How To Play" textFill="WHITE">
+         <font>
+            <Font name="Unispace-Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView id="backToMenu" fitHeight="59.0" fitWidth="50.0" layoutX="22.0" layoutY="681.0" onMouseClicked="#switchScenes" onMouseEntered="#imageViewHover" onMouseExited="#imageViewUnHover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/navigation/backButton.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="192.0" fitWidth="500.0" layoutX="250.0" layoutY="50.0">
+         <image>
+            <Image url="@../assets/PacmanDash.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="81.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You are up against another player" wrappingWidth="858.319580078125">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="81.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="in a race to the finish line!" wrappingWidth="858.319580078125">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="81.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game plan is simple:" wrappingWidth="858.319580078125">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="81.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avoid ghosts, get special boost" wrappingWidth="858.319580078125">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="81.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="and be the fastest to the finish line." wrappingWidth="858.319580078125">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="81.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controls:" wrappingWidth="858.319580078125">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblPlayer1Controls" layoutX="81.0" layoutY="567.0" text="Player 1: WASD" textFill="WHITE">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPlayer2Controls" layoutX="81.0" layoutY="593.0" text="Player 2: Arrow Keys" textFill="WHITE">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="103.0" layoutX="566.0" layoutY="399.0">
+         <image>
+            <Image url="@../assets/gifPacman/pacman-Yellow.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="109.0" layoutX="522.0" layoutY="355.0" rotate="-40.0">
+         <image>
+            <Image url="@../assets/custom/pacman/crown.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="93.0" fitWidth="85.0" layoutX="791.0" layoutY="242.0">
+         <image>
+            <Image url="@../assets/ghosts/gifGhosts/redghost.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="63.0" layoutX="461.0" layoutY="435.0">
+         <image>
+            <Image url="@../assets/boots/boots.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="706.0" layoutY="603.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Good luck!" wrappingWidth="203.6529541015625">
+         <font>
+            <Font name="Unispace-Bold" size="30.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="82.0" fitWidth="76.0" layoutX="807.0" layoutY="201.0" rotate="15.3">
+         <image>
+            <Image url="@../assets/custom/pacman/PropHat.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
