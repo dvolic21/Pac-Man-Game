@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="mainMenu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <Button layoutX="400.0" layoutY="647.0" mnemonicParsing="false" onAction="#switchScenes" prefHeight="43.0" prefWidth="200.0" styleClass="mainButton" stylesheets="@style.css" text="Back to Menu">
+         <font>
+            <Font name="Unispace-Bold" size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="191.0" fitWidth="500.0" layoutX="250.0" layoutY="50.0">
+         <image>
+            <Image url="@../assets/PacmanDash.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pacmanCustom1" fitHeight="160.0" fitWidth="160.0" layoutX="40.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/custom/pacman/pacmanYellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pacmanCustom2" fitHeight="160.0" fitWidth="160.0" layoutX="479.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/custom/pacman/pacmanYellow.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblWinner" layoutY="304.0" prefHeight="47.0" prefWidth="700.0" style="-fx-alignment: CENTER;" text="Winner Winner Chicken Dinner" textFill="WHITE">
+         <font>
+            <Font name="Unispace-Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="taChat" layoutX="675.0" layoutY="252.0" prefHeight="323.0" prefWidth="300.0" wrapText="true">
+         <font>
+            <Font name="Unispace-Bold" size="15.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="tfMessage" layoutX="675.0" layoutY="592.0" prefHeight="31.0" prefWidth="220.0" promptText="Send a message...">
+         <font>
+            <Font name="Unispace-Bold" size="15.0" />
+         </font>
+      </TextField>
+      <Button layoutX="914.0" layoutY="591.0" mnemonicParsing="false" onAction="#sendMessage" styleClass="mainButton" stylesheets="@style.css" text="Send">
+         <font>
+            <Font name="Unispace-Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="788.0" layoutY="201.0" text="Chat" textFill="WHITE">
+         <font>
+            <Font name="Unispace-Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
