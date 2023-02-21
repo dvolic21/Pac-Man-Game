@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1000.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <ImageView id="backToPlayFromServer" fitHeight="59.0" fitWidth="50.0" layoutX="22.0" layoutY="681.0" onMouseClicked="#switchScenes" onMouseEntered="#imageViewHover" onMouseExited="#imageViewUnHover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/navigation/backButton.png" />
+         </image>
+      </ImageView>
+      <Label layoutY="399.0" prefHeight="47.0" prefWidth="1000.0" style="-fx-alignment: center;" text="Waiting for another player..." textFill="WHITE">
+         <font>
+            <Font name="Unispace-Bold" size="35.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="263.0" fitWidth="688.0" layoutX="156.0" layoutY="50.0">
+         <image>
+            <Image url="@../assets/PacmanDash.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

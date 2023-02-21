@@ -1,0 +1,25 @@
+/* @font-face {
+    font-family: Unispace-Bold;
+    src: url("assets/font/unispace%20bold.ttf");
+} */
+/* 
+#pane {
+    -fx-background-image: url("../maze.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 100%;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+} */
+
+.mainButton {
+    -fx-background-radius: 10;
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.pane {
+    -fx-background-color: rgb(40, 40, 40);
+}
